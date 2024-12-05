@@ -1,0 +1,213 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(90deg, #007bff, #6c757d);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+/* Section Spacing */
+section {
+    padding: 60px 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Typography */
+p {
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Button styles */
+button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; /* Interactive Styles */
+}
+
+button:hover {
+    background-color: #0056b3;
+    color: white;
+    opacity: 0.9;
+    transform: scale(1.05); /* Interactive Styles */
+}
+
+/* Navbar */
+.navbar {
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.navbar-brand:hover {
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.nav-link {
+    color: #333;
+    font-size: 1rem;
+    transition: color 0.3s ease-in-out; /* Interactive Styles */
+}
+
+.nav-link:hover {
+    color: #0056b3;
+}
+
+/* Interactive Styles */
+/* Form Styles */
+input, textarea {
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+    transition: all 0.2s; /* Interactive Styles */
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Interactive Styles */
+}
+
+/* Interactive Dark Mode Toggle */
+#darkModeToggle {
+    margin-top: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Interactive Styles */
+}
+
+#darkModeToggle:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background: #343a40;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    header {
+        padding: 40px 15px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .contact-section {
+        padding: 40px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 30px 10px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .skills-section .col-md-4 {
+        margin-bottom: 20px;
+    }
+
+    /* Form Styles for smaller screens */
+    input, textarea {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    header {
+        text-align: left;
+        padding: 20px 10px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+        margin-bottom: 5px;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
